@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `CO2TAL - Constructions`,
+    description: `Provide you The Best Climate Solutions in Constructions`,
+    author: `@webexpress`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,12 +21,27 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#033068`,
+        theme_color: `#033068`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Archivo`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ],
+        fonts: [
+          `Archivo Black`,
+          `source sans pro\:400` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      },
+    },
+    `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

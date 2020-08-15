@@ -24,8 +24,11 @@ body {
  .paddingWrapper{
  padding: 0 5%;
  }
+ h4,h5{
+ font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  
- h1,h2,h3,h4,h5{
+ }
+ h1,h2,h3{
   font-family: 'Archivo Black', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  }
  

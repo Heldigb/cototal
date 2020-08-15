@@ -8,7 +8,7 @@ const HomeContent = () => {
   return (
     <VideoContentSection>
         <Grid container alignItems="center" className="bannerContentWrap paddingWrapper">
-            <Grid item sm={8}>
+            <Grid item sm={6} md={7}  lg={8}>
               <VideoWrap>
               <video
                 height='100%'
@@ -19,7 +19,7 @@ const HomeContent = () => {
               />
               </VideoWrap>
             </Grid>
-            <Grid item sm={4} className="content--cta">
+            <Grid item sm={6} md={5}  lg={4} className="content--cta">
                 <h4> Provide You The Best Provide You The Best</h4>
                 <p>Lorem ipsum dolor sit amet,
                   consectetur adipisicing elit.

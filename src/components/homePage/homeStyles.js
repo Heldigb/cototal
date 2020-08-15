@@ -7,8 +7,6 @@ h5{
 
 }
 h2{
-
-
   color: ${props => props.theme.accent};
 }
 
@@ -34,11 +32,13 @@ export const VideoContentSection = styled.div`
       }
   .content--cta{
       h4{
-        font-weight: 400;
+        font-weight: 600;
+          color: ${props => props.theme.accent};
        }
         p{
             margin-top: 15px;
             max-width: 80%;
+              color: ${props => props.theme.secondary};
         }
         
        padding-left: 50px;
@@ -46,11 +46,17 @@ export const VideoContentSection = styled.div`
         h4{
            margin-top: 25px;
        }
-              padding-left: 0;
+             
           p{
               margin-top: 25px;
               max-width: 100%;
         }
+         padding-left: 25px;  
+      }  
+       @media (max-width: 600px){
+    
+            padding-left: 0;  
+      
       }
       button {
       span{
@@ -69,3 +75,6 @@ export const VideoContentSection = styled.div`
 export const VideoWrap = styled.div`
    padding: 5% 0;
   `
+
+
+

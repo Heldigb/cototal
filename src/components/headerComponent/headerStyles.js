@@ -1,15 +1,15 @@
 import styled from "styled-components"
 
 export const TopHeaderBlock = styled.div`
-
-height: 300px;
+    box-shadow: 0px 2px 4px 10px rgba(0,0,0,0.2), 0px 4px 5px 10px rgba(0,0,0,0.14), 0px 1px 160px 10px rgba(0,0,0,0.12);
+height: 260px;
 display: flex;
 align-items:center;
 justify-content: space-between;
 padding: 0 5%;
 
 @media (max-width: 1200px){
-         height: 250px;
+         height: 220px;
       }
 @media (max-width: 1024px){
          height: 200px;
@@ -21,7 +21,7 @@ padding: 0 5%;
          height: 150px;
       }
  @media (max-width: 500px){
-         height: 60px;
+         height: 80px;
       }
 `
 

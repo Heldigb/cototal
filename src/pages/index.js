@@ -8,9 +8,12 @@ import HomeBanner from "../components/homePage/homeBanner"
 import HomeContent from "../components/homePage/homeContent"
 import HomeService from "../components/homePage/homeService"
 import HomeOffers from "../components/homePage/homeOffers"
+
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home"/>
+
     <HomeBanner/>
     <HomeContent/>
     <HomeService/>

@@ -20,7 +20,7 @@ const HomeContent = () => {
               </VideoWrap>
             </Grid>
             <Grid item sm={6} md={5}  lg={4} className="content--cta">
-                <h4> Provide You The Best Provide You The Best</h4>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro?</h4>
                 <p>Lorem ipsum dolor sit amet,
                   consectetur adipisicing elit.
                   Architecto earum labore magni,

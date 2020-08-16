@@ -152,6 +152,13 @@ body {
     font-size: 1rem;
   }
   
+ // Custom slider Home page
+ 
+ .BrainhubCarouselItem{
+ width: 300px!important;
+ }
+  
+  
  header{
     width: 100%;
  }

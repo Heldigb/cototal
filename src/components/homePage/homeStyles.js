@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled ,{css} from "styled-components"
+
 
 export const HomeBannerSection = styled.div`
 h5{
@@ -15,7 +16,7 @@ export const HomeBannerWrap = styled.div`
 
   background-size: cover;
   background-position: center right;
-  background-attachment: fixed;
+  //background-attachment: fixed;
   .bannerContentWrap{
   height: 100%;
     }
@@ -75,6 +76,30 @@ export const VideoContentSection = styled.div`
 export const VideoWrap = styled.div`
    padding: 5% 0;
   `
+
+
+
+//SERVICES
+
+
+export const Container = styled.div`
+
+${props => props.bgColorGray && css`
+background: ${props => props.theme.bgDarkerGray};
+
+`}
+
+${props => props.gap && css`
+
+   padding: 5% 75px;
+       @media (max-width: 768px){
+          padding-top: 50px;
+          padding-bottom: 50px;
+      }
+      
+`}
+
+`
 
 
 

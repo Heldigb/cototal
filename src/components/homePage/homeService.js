@@ -1,12 +1,22 @@
 import React from "react"
 
 
+import SliderViewBlock from "../sliderComponent/SliderView"
+import {Container} from "./homeStyles"
 
-const HomeService = () => {
+
+// import Slider from "../sliderComponent/SliderView"
+const HomeService = ({props}) => {
   return (
-    <div>
-      Service
-    </div>
+
+
+    <Container gap bgColorGray>
+     {/*Top Header */}
+
+     <h2>Services</h2>
+      <SliderViewBlock/>
+
+    </Container>
   )
 
 }

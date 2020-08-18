@@ -24,7 +24,7 @@ const Nav = () => {
   const useStyles = makeStyles((theme) => ({
 
     root: {
-      flexGrow: 1
+      flexGrow: 1,
     },
 
     button: {
@@ -36,8 +36,9 @@ const Nav = () => {
       marginRight: 0
     },
     title: {
-      flexGrow: 1
-    }
+      flexGrow: 1,
+    },
+
   }))
 
 
@@ -71,87 +72,87 @@ const Nav = () => {
             <Link  activeClassName="active" to="/contact/"> <Button color="primary" className={classes.button} startIcon={<ContactPhoneIcon/>}>Contact</Button></Link>
           </NavBarList>
 
+          {/*className="desktopHide"*/}
 
-          {auth && (
-            <MobileMenu className="desktopHide">
-              <IconButton
-                edge="start"
-                className={classes.menuButton}
-                color="inherit"
-                aria-label="menu"
-                onClick={handleMenu}
-              >
-                <MenuIcon/>
-              </IconButton>
+            {/*<MobileMenu >*/}
+            {/*  <IconButton*/}
+            {/*    edge="start"*/}
+            {/*    className={classes.menuButton}*/}
+            {/*    color="inherit"*/}
+            {/*    aria-label="menu"*/}
+            {/*    onClick={handleMenu}*/}
+            {/*  >*/}
+            {/*    <MenuIcon/>*/}
+            {/*  </IconButton>*/}
 
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorEl}
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "right"
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "right"
-                }}
-                open={open}
-                onClose={handleClose}
-              >
-                  <MenuItem  onClick={handleClose} >
+            {/*  <Menu*/}
+            {/*    id="menu-appbar"*/}
+            {/*    anchorEl={anchorEl}*/}
+            {/*    anchorOrigin={{*/}
+            {/*      vertical: "top",*/}
+            {/*      horizontal: "right"*/}
+            {/*    }}*/}
+            {/*    keepMounted*/}
+            {/*    transformOrigin={{*/}
+            {/*      vertical: "top",*/}
+            {/*      horizontal: "right"*/}
+            {/*    }}*/}
+            {/*    open={open}*/}
+            {/*    onClose={handleClose}*/}
+            {/*  >*/}
+            {/*      <MenuItem  onClick={handleClose} >*/}
 
-                    <Link style={{color: "#7c7c7c"}} activeStyle={{ color: "#03306b" }} to="/">
-                        <ListItemIcon>
-                        <HomeIcon fontSize="small" />
-                      </ListItemIcon>
-                      <span>
+            {/*        <Link style={{color: "#7c7c7c"}} activeStyle={{ color: "#03306b" }} to="/">*/}
+            {/*            <ListItemIcon>*/}
+            {/*            <HomeIcon fontSize="small" />*/}
+            {/*          </ListItemIcon>*/}
+            {/*          <span>*/}
 
-                      Home
-                      </span>
-                    </Link>
-                  </MenuItem>
-
-
+            {/*          Home*/}
+            {/*          </span>*/}
+            {/*        </Link>*/}
+            {/*      </MenuItem>*/}
 
 
-                  <MenuItem onClick={handleClose}>
-
-                    <Link style={{color: "#7c7c7c"}} activeStyle={{ color: "#03306b" }} to="/service">
-                    <ListItemIcon>
-                    <FormatPaintIcon fontSize="small" />
-                  </ListItemIcon>
-                      <span>
-                        Services
-                      </span>
-                </Link>
-                </MenuItem>
-
-                <MenuItem color="primary" onClick={handleClose}>
-                  <Link style={{color: "#7c7c7c"}} activeStyle={{ color: "#03306b" }} to="/about/">
-                  <ListItemIcon>
-                  <InfoIcon fontSize="small" />
-                </ListItemIcon>
-                    <span>
-                      About
-                    </span>
-                  </Link>
-                  </MenuItem>
 
 
-                  <MenuItem onClick={handleClose}>
-                    <Link style={{color: "#7c7c7c"}} activeStyle={{ color: "#03306b" }} to="/contact/">
-                  <ListItemIcon>
-                    <ContactPhoneIcon fontSize="small" />
-                  </ListItemIcon>
-                 <span>Contact</span>
+            {/*      <MenuItem onClick={handleClose}>*/}
 
-                </Link>
-                </MenuItem>
+            {/*        <Link style={{color: "#7c7c7c"}} activeStyle={{ color: "#03306b" }} to="/service">*/}
+            {/*        <ListItemIcon>*/}
+            {/*        <FormatPaintIcon fontSize="small" />*/}
+            {/*      </ListItemIcon>*/}
+            {/*          <span>*/}
+            {/*            Services*/}
+            {/*          </span>*/}
+            {/*    </Link>*/}
+            {/*    </MenuItem>*/}
 
-              </Menu>
-            </MobileMenu>
-          )}
+            {/*    <MenuItem color="primary" onClick={handleClose}>*/}
+            {/*      <Link style={{color: "#7c7c7c"}} activeStyle={{ color: "#03306b" }} to="/about/">*/}
+            {/*      <ListItemIcon>*/}
+            {/*      <InfoIcon fontSize="small" />*/}
+            {/*    </ListItemIcon>*/}
+            {/*        <span>*/}
+            {/*          About*/}
+            {/*        </span>*/}
+            {/*      </Link>*/}
+            {/*      </MenuItem>*/}
+
+
+            {/*      <MenuItem onClick={handleClose}>*/}
+            {/*        <Link style={{color: "#7c7c7c"}} activeStyle={{ color: "#03306b" }} to="/contact/">*/}
+            {/*      <ListItemIcon>*/}
+            {/*        <ContactPhoneIcon fontSize="small" />*/}
+            {/*      </ListItemIcon>*/}
+            {/*     <span>Contact</span>*/}
+
+            {/*    </Link>*/}
+            {/*    </MenuItem>*/}
+
+            {/*  </Menu>*/}
+            {/*</MobileMenu>*/}
+
         </Toolbar>
       </AppBar>
     </NavigationBar>

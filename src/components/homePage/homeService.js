@@ -1,21 +1,22 @@
 import React from "react"
+import { Container,ServiceWrap } from "./homeStyles"
+import MyCarousel from "../sliderComponent/SliderCarousel"
+import SectionTitle from "./sectionTitle"
+import SingleLineGridList from "../sliderComponent/MaterialSlider"
 
+const HomeService = ({ props }) => {
 
-import SliderViewBlock from "../sliderComponent/SliderView"
-import {Container} from "./homeStyles"
-
-
-// import Slider from "../sliderComponent/SliderView"
-const HomeService = ({props}) => {
+  const SectionName = "Service"
   return (
 
 
-    <Container gap bgColorGray>
-     {/*Top Header */}
+    <Container heightFull gap bgColorGray>
 
-     <h2>Services</h2>
-      <SliderViewBlock/>
-
+      <SectionTitle SectionName={SectionName}/>
+<ServiceWrap>
+      {/*<MyCarousel/>*/}
+      <SingleLineGridList/>
+</ServiceWrap>
     </Container>
   )
 

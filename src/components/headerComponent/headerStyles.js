@@ -97,6 +97,10 @@ export const MobileMenu = styled.div`
      
 `
 export const NavBarList = styled.div`
+
+
+
+
  a {
  
  &.active {
@@ -117,8 +121,23 @@ color: ${props => props.theme.secondary};
  }
  
  
-    @media (max-width: 768px){
-       display: none;
+    @media (max-width: 600px){
+    flex-direction: row;
+    overflow-x: scroll;
+    display: flex; 
+     }
+     
+       @media (max-width: 500px){
+
+        .MuiButton-label{
+            font-size:0.8rem;
+         }
+      }
+     @media (max-width: 350px){
+
+        .MuiButton-label{
+            font-size:8px;
+         }
       }
 `
 

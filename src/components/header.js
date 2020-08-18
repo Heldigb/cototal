@@ -5,7 +5,6 @@ import PropTypes from "prop-types"
 
 import Nav from "./headerComponent/Nav"
 import TopHeader from "./headerComponent/topHeader"
-
 const Header = ({ siteTitle }) => {
 
 // const Header = () => {
@@ -16,6 +15,7 @@ const Header = ({ siteTitle }) => {
     <header>
       <TopHeader siteName={siteTitle}/>
       <Nav/>
+
     </header>
   )
 

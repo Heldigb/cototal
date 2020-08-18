@@ -20,7 +20,10 @@ const HomeContent = () => {
             <Grid item sm={6} md={7}  lg={8}>
               <VideoWrap>
 
-                <ReactPlayer url={VideoItem} controls={true} />
+                <ReactPlayer url={VideoItem}
+                             width="100%"
+                             height="100%"
+                             controls={true} />
                 {/*<ReactWebMediaPlayer*/}
                 {/*  title="My own video player"*/}
                 {/*  video={VideoItem}*/}

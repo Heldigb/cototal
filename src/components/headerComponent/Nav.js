@@ -1,14 +1,14 @@
-import React from "react"
+import React,{useEffect} from "react"
 import { Link } from "gatsby"
 import { NavigationBar, NavBarList,MobileMenu } from "./headerStyles"
 import { makeStyles } from "@material-ui/core/styles"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
-import IconButton from "@material-ui/core/IconButton"
-import MenuIcon from "@material-ui/icons/Menu"
-
-import MenuItem from "@material-ui/core/MenuItem"
-import Menu from "@material-ui/core/Menu"
+// import IconButton from "@material-ui/core/IconButton"
+// import MenuIcon from "@material-ui/icons/Menu"
+//
+// import MenuItem from "@material-ui/core/MenuItem"
+// import Menu from "@material-ui/core/Menu"
 
 import Button from "@material-ui/core/Button"
 import HomeIcon from "@material-ui/icons/Home"
@@ -42,25 +42,49 @@ const Nav = () => {
   }))
 
 
+  //Scroll and Stick
+  const [scrolled,setScrolled]=React.useState(false);
+  const handleScroll=() => {
+    const offset=window.scrollY;
+    if(offset > 400 ){
+      setScrolled(true);
+    }
+    else{
+      setScrolled(false);
+    }
+  }
+  let navbarClasses=['navbar'];
+  if(scrolled){
+    navbarClasses.push('scrolled');
+  }
+
+
+  useEffect(() => {
+    window.addEventListener('scroll',handleScroll)
+  })
+
+
   const classes = useStyles()
   const [auth, setAuth] = React.useState(true)
   const [anchorEl, setAnchorEl] = React.useState(null)
-  const open = Boolean(anchorEl)
 
-  const handleChange = (event) => {
-    setAuth(event.target.checked)
-  }
 
-  const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget)
-  }
+  // const open = Boolean(anchorEl)
 
-  const handleClose = () => {
-    setAnchorEl(null)
-  }
+  // const handleChange = (event) => {
+  //   setAuth(event.target.checked)
+  // }
+  //
+  // const handleMenu = (event) => {
+  //   setAnchorEl(event.currentTarget)
+  // }
+  //
+  // const handleClose = () => {
+  //   setAnchorEl(null)
+  // }
 
   return (
-    <NavigationBar>
+    <NavigationBar className={navbarClasses.join(" ")}>
 
       <AppBar color="default" position="static">
         <Toolbar className="layoutGutter" disableGutters={true}>

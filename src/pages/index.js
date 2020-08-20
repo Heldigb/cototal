@@ -15,8 +15,8 @@ const IndexPage = () => (
     <SEO title="Home"/>
 
     <HomeBanner/>
-    <HomeContent/>
-    <HomeService/>
+      <HomeService/>
+      <HomeContent/>
     <HomeOffers/>
 
     {/*<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>*/}

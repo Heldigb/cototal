@@ -4,22 +4,20 @@ import { Link } from "gatsby"
 import Typography from "@material-ui/core/Typography"
 
 import LogoImage from "../../assets/img/logo-co2tal-constructions.png"
-import {Logo,TopHeaderBlock,HeaderInfo} from "./headerStyles"
-import LocalPhoneSharpIcon from '@material-ui/icons/LocalPhoneSharp';
+import { Logo, TopHeaderBlock, HeaderInfo } from "./headerStyles"
+import LocalPhoneSharpIcon from "@material-ui/icons/LocalPhoneSharp"
 
-const TopHeader = ({siteName}) => {
+const TopHeader = ({ siteName }) => {
 
 
   return (
     <TopHeaderBlock>
-
-          <Logo>
-            <Link to="/">
-            <img src={LogoImage} alt=""/>
-            {/*{siteName}*/}
-            </Link>
-          </Logo>
-
+      <Logo>
+        <Link to="/">
+          <img src={LogoImage} alt=""/>
+          {/*{siteName}*/}
+        </Link>
+      </Logo>
       <HeaderInfo>
         <span>
           <LocalPhoneSharpIcon className="header--icon"/>
@@ -31,7 +29,7 @@ const TopHeader = ({siteName}) => {
       </HeaderInfo>
 
 
-          {/*<Typography variant="title">{siteName}</Typography>*/}
+      {/*<Typography variant="title">{siteName}</Typography>*/}
 
 
     </TopHeaderBlock>

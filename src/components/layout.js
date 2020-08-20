@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import GlobalStyle from "../styles/globalStyles"
 import Header from "./header"
 import {ThemeProvider } from "styled-components"
-
+import FooterBlock from "./footer/FooterSection"
 // import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -30,6 +30,7 @@ const Layout = ({ children }) => {
     bgDarkerGray: "#f2f2f2",
     text: "#1d1d1d",
     secondary: "#7c7c7c",
+    darkGreyText: "#373434",
     accent: "#03306b",
     bg: "#e1e1e1",
   }
@@ -43,12 +44,7 @@ const Layout = ({ children }) => {
 
         <main>{children}</main>
 
-
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+      <FooterBlock/>
 
     </ThemeProvider>
   )

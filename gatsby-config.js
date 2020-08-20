@@ -3,6 +3,8 @@ module.exports = {
     title: `CO2TAL - Constructions`,
     description: `Provide you The Best Climate Solutions in Constructions`,
     author: `@webexpress`,
+    email:`info@co2tal.dk`,
+    phone: `+4534443334`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

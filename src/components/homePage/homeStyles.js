@@ -1,4 +1,4 @@
-import styled ,{css} from "styled-components"
+import styled, { css } from "styled-components"
 
 
 export const HomeBannerSection = styled.div`
@@ -26,6 +26,12 @@ export const HomeBannerWrap = styled.div`
 export const VideoContentSection = styled.div`
     padding-top: 75px;
     padding-bottom: 75px;
+    
+    
+    
+    ${props => props.bgColorGray && css`
+        background: ${props => props.theme.bgDarkerGray};
+    `}
     .wmp-container{
       width: 100%!important;
   height: auto;
@@ -72,7 +78,7 @@ export const VideoContentSection = styled.div`
       font-size: 0.8rem;
       }
       margin-top: 25px;
-      float: right;
+      //float: right;
       }
   }
     
@@ -88,7 +94,6 @@ export const VideoWrap = styled.div`
    height: auto!important;
    }
   `
-
 
 
 //SERVICES
@@ -116,6 +121,8 @@ cursor: pointer;
 
 `
 export const Container = styled.div`
+
+
 ${props => props.heightFull && css`
 //min-height: 75vh;
 height: auto;
@@ -216,23 +223,28 @@ flex-direction: column;
 `
 
 // SECTION TITLE
+export const SectionTitleWrap = styled.div`
+
+margin-bottom: 50px;
+`
 export const EyeCatcher = styled.div`
 margin-bottom: 15px;
 height:20px;
-width: 120px;
+width: 80px;
 display: block;
+
 &:before {
 content:'';
 height:4px;
-width: 100px;
-background-color: ${props => props.theme.secondary};
+width: 60px;
+background-color: ${props => props.theme.accent};
 display: block;
 
 }
 &:after {
 content:'';
 height:4px;
-width: 100px;
+width: 60px;
 background:  #b6b6b6; 
 display: block;
 margin-top: 10px;
@@ -240,9 +252,11 @@ float: right;
 }
 
 `
-export const Title = styled.h4`
+export const Title = styled.h3`
 
-  color: ${props => props.theme.secondary};
+  color: ${props => props.theme.accent};
+ //color:#1b70db;
+  
   margin-bottom: 30px;
     @media (max-width: 768px){
            margin-bottom: 15px;
@@ -250,16 +264,15 @@ export const Title = styled.h4`
 `
 
 export const ServiceWrap = styled.div`
-//.MuiGridListTile-root{
-//height: 350px!important;
+.MuiGridListTile-root{
+
 //
-//@media (max-width: 768px){
-//       width: 100%!important;
-//      }
-//img{
-//width: 100%;
-//height: 100%;
-//}
-//}
+@media (max-width: 768px){
+       width: 50%!important;
+      }
+@media (max-width: 560px){
+       width: 90%!important;
+      }
+}
     
 `

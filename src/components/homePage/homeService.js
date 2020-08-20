@@ -1,6 +1,5 @@
 import React from "react"
-import { Container,ServiceWrap } from "./homeStyles"
-import MyCarousel from "../sliderComponent/SliderCarousel"
+import { Container, ServiceWrap } from "./homeStyles"
 import SectionTitle from "./sectionTitle"
 import SingleLineGridList from "../sliderComponent/MaterialSlider"
 
@@ -10,13 +9,12 @@ const HomeService = ({ props }) => {
   return (
 
 
-    <Container heightFull gap bgColorGray>
+    <Container heightFull gap>
 
       <SectionTitle SectionName={SectionName}/>
-<ServiceWrap>
-      {/*<MyCarousel/>*/}
-      <SingleLineGridList/>
-</ServiceWrap>
+          <ServiceWrap>
+                <SingleLineGridList/>
+          </ServiceWrap>
     </Container>
   )
 

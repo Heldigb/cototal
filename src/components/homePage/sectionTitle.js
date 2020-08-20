@@ -1,15 +1,14 @@
 import React from "react"
-import {EyeCatcher,Title} from "./homeStyles"
+import {EyeCatcher,Title,SectionTitleWrap} from "./homeStyles"
 
 const SectionTitle = ({SectionName}) => {
 
 
   return (
-    <>
+    <SectionTitleWrap>
       <EyeCatcher/>
       <Title>{SectionName}</Title>
-
-    </>
+    </SectionTitleWrap>
   )
 
 }

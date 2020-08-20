@@ -14,6 +14,8 @@ import imageTwo from "../../assets/img/img2.jpg"
 import imageThree from "../../assets/img/img3.jpg"
 import imageFour from "../../assets/img/img4.jpg"
 import imageFive from "../../assets/img/img5.png"
+
+
 import Card from "@material-ui/core/Card"
 import CardActionArea from "@material-ui/core/CardActionArea"
 import CardMedia from "@material-ui/core/CardMedia"
@@ -33,7 +35,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
 
   },
-
+  tile:{
+    width: "100%",
+    height: 350,
+  },
   gridList: {
     flexWrap: "nowrap",
     // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
@@ -105,8 +110,8 @@ export default function SingleLineGridList() {
   return (
     <div className={classes.root}>
       <GridList className={classes.gridList} cols={2.5}>
-        {tileData.map((tile) => (
-          <GridListTile key={tile.img}>
+        {tileData.map((tile,index) => (
+          <GridListTile style={{height: 350}}  key={tile.img+index}>
 
 
 
@@ -140,18 +145,18 @@ export default function SingleLineGridList() {
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
-              height="140"
+              height="350"
               image={imageOne}
               title="Contemplative Reptile"
             />
             <CardContent>
-              <Typography  variant="p" component="p">
+              <Typography  variant="h6" component="p">
                 Lizard
               </Typography>
-              {/*<Typography variant="body2" color="textSecondary" component="p">*/}
-              {/*  Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging*/}
-              {/*  across all continents except Antarctica*/}
-              {/*</Typography>*/}
+              <Typography variant="body2" color="textSecondary" component="p">
+                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                across all continents except Antarctica
+              </Typography>
             </CardContent>
             </Link>
           </CardActionArea>

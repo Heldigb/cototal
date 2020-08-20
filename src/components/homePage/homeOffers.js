@@ -1,7 +1,7 @@
 import React from "react"
 import SectionTitle from "./sectionTitle"
 import { Container} from "./homeStyles"
-
+// MaterialUI
 import Grid from "@material-ui/core/Grid"
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -12,28 +12,42 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-import imageOne from "../../assets/img/inner-banner.jpg"
+import imageOne from "../../assets/img/img3.jpg"
 const SectionName = "Offers"
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
+    height: 300,
   },
   media: {
-    height: 140,
+    height: 300,
+  },
+  control: {
+    padding: theme.spacing(5),
   },
 
-});
+}));
 
 const HomeOffers = () => {
 
-
+  const [spacing, setSpacing] = React.useState(5);
   const classes = useStyles();
+
+  const handleChange = (event) => {
+    setSpacing(Number(event.target.value));
+  };
+
   return (
     <div>
-      <Container  gap>
+      <Container  gap >
         <SectionTitle SectionName={SectionName}/>
-        <Grid container alignItems="center" className="bannerContentWrap " >
+        <Grid container
+              direction="row"
+              justify="space-between"
+              alignItems="center"
+              spacing={spacing}
+              className="bannerContentWrap" >
 
           <Grid item sm={6}>
             <Card>
@@ -45,11 +59,10 @@ const HomeOffers = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Lizard
+                  Isolation
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                  across all continents except Antarctica
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, praesentium.
                 </Typography>
               </CardContent>
             </CardActionArea>

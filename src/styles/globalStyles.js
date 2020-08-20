@@ -18,18 +18,21 @@ html {
 
 body {
   font-size: 16px;
-  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Arial', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  //font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  }
  
  .paddingWrapper{
  padding: 0 5%;
  }
  h4,h5{
- font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-family: 'Arial', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ //font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  
  }
  h1,h2,h3{
-  font-family: 'Archivo Black', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Arial Black', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  //font-family: 'Archivo Black', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  }
  
  h1{
@@ -43,9 +46,12 @@ body {
   }
   h4{
    font-size: 2.3rem;
+    margin-top: 2.2rem;
+      margin-bottom: 0.7rem;
   }
   h5{
    font-size: 1.8rem;
+   margin-top: 2rem;
   }
   span{
     font-size: 1.2rem;
@@ -150,13 +156,15 @@ body {
   
   p{
     font-size: 1rem;
+    line-height: 1.7rem;
+      margin-top: 0.6rem;
   }
   
  // Custom slider Home page
  
- .BrainhubCarouselItem{
- width: 300px!important;
- }
+ //.BrainhubCarouselItem{
+ //       width: 300px!important;
+ //}
   
   
  header{
@@ -167,6 +175,30 @@ body {
          display: none;
          }
       }
+      
+            //IMPORTANT
+.scrolled{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  width: 100%;
+  z-index: 9999;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.link--color{
+color:  #000;
+&:hover, &:focus {
+ color: #0000008a;
+ .MuiSvgIcon-root{
+ path{ color: #0000008a!important;} 
+ }
+}
+}
+
 `
 
 

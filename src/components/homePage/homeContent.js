@@ -1,6 +1,7 @@
 import React from "react"
+import {Link} from "gatsby"
 import Grid from "@material-ui/core/Grid"
-import {VideoContentSection,VideoWrap} from "./homeStyles"
+import { Container, VideoContentSection, VideoWrap } from "./homeStyles"
 import Button from '@material-ui/core/Button';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import HomeIcon from "@material-ui/icons/Home"
@@ -15,7 +16,7 @@ import VideoItemLogo from "../../assets/img/logo-co2tal-constructions.png"
 
 const HomeContent = () => {
   return (
-    <VideoContentSection>
+    <VideoContentSection  bgColorGray>
         <Grid container alignItems="center" className="bannerContentWrap paddingWrapper">
             <Grid item sm={6} md={7}  lg={8}>
               <VideoWrap>
@@ -43,7 +44,7 @@ const HomeContent = () => {
                   Architecto earum labore magni,
                   modi praesentium vel.</p>
 
-              <Button size="small" variant="text" endIcon={<ArrowRightAltIcon/>}>Read More</Button>
+           <Link to="/about">   <Button size="small" variant="text" endIcon={<ArrowRightAltIcon/>}>Read More</Button></Link>
             </Grid>
         </Grid>
       </VideoContentSection>

@@ -89,10 +89,10 @@ export const VideoContentSection = styled.div`
 `
 export const VideoWrap = styled.div`
    padding: 5% 0;
-   &>div {
-   width: 100%!important;
-   height: auto!important;
-   }
+   //&>div {
+   //width: 100%!important;
+   //height: auto!important;
+   //}
   `
 
 

@@ -139,6 +139,49 @@ const FooterBlock = () => {
               </List>
             </div>
           </Grid>
+
+          {/*   SERVICES   */}
+
+          <Grid item xs={12} sm={6} md={3} >
+            {isMobileXs ? ( <Divider light className={classes.gap} />)  : '' }
+            <Typography variant="h6" className={classes.title}>
+              Services
+            </Typography>
+            <div >
+              <List dense={dense}>
+
+                <ListItem>
+                  <ListItemIcon>
+                    <FolderIcon/>
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Single-line item"
+
+                  />
+                </ListItem>
+
+                <ListItem>
+                  <ListItemIcon>
+                    <FolderIcon/>
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Single-line item"
+                  />
+                </ListItem>
+
+                <ListItem>
+                  <ListItemIcon>
+                    <FolderIcon/>
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Single-line item"
+                  />
+                </ListItem>
+              </List>
+            </div>
+          </Grid>
+
+
           {/* MENU*/}
           <Grid item xs={12} sm={6} md={3} >
             {isMobileXs ? ( <Divider light className={classes.gap} />)  : '' }
@@ -198,47 +241,6 @@ const FooterBlock = () => {
               </List>
             </div>
           </Grid>
-          {/*   SERVICES   */}
-
-          <Grid item xs={12} sm={6} md={3} >
-            {isMobileXs ? ( <Divider light className={classes.gap} />)  : '' }
-            <Typography variant="h6" className={classes.title}>
-              Services
-            </Typography>
-            <div >
-              <List dense={dense}>
-
-                <ListItem>
-                  <ListItemIcon>
-                    <FolderIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Single-line item"
-
-                  />
-                </ListItem>
-
-                <ListItem>
-                  <ListItemIcon>
-                    <FolderIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Single-line item"
-                  />
-                </ListItem>
-
-                <ListItem>
-                  <ListItemIcon>
-                    <FolderIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Single-line item"
-                  />
-                </ListItem>
-              </List>
-            </div>
-          </Grid>
-
 
 
           <Grid item xs={12}>

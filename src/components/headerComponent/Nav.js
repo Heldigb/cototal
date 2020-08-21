@@ -46,7 +46,7 @@ const Nav = () => {
   const [scrolled,setScrolled]=React.useState(false);
   const handleScroll=() => {
     const offset=window.scrollY;
-    if(offset > 400 ){
+    if(offset > 300 ){
       setScrolled(true);
     }
     else{
@@ -84,9 +84,9 @@ const Nav = () => {
   // }
 
   return (
-    <NavigationBar className={navbarClasses.join(" ")}>
+    <NavigationBar>
 
-      <AppBar color="default" position="static">
+      <AppBar  className={navbarClasses.join(" ")} color="default" position="static">
         <Toolbar className="layoutGutter" disableGutters={true}>
 
           <NavBarList className={classes.title}>

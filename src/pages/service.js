@@ -3,13 +3,21 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Container } from "../styles/layoutStyles"
+import ServicePageContent from "../components/subpageComponent/servicePageContent"
 
 const ServicePage = () => (
   <Layout>
     <SEO title="Service Page" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+
+
+
+
+    <Container>
+      <Link to="/">Go back to the homepage</Link>
+      <ServicePageContent/>
+    </Container>
+
   </Layout>
 )
 

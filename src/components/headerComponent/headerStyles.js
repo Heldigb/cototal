@@ -73,7 +73,7 @@ object-fit: contain;
 
 
 export const NavigationBar = styled.div`
- 
+ height: 60px;
       .layoutGutter {
       padding: 0 5%;
       }
@@ -81,10 +81,6 @@ export const NavigationBar = styled.div`
     color: ${props => props.theme.secondary};
     background-color: #f2f2f2;
     }
-    
-    
-    
-
 `
 
 export const MobileMenu = styled.div`
@@ -94,18 +90,15 @@ export const MobileMenu = styled.div`
               color: #d7d7d7!important;
                }
         }
-     
 `
 export const NavBarList = styled.div`
-
-
-
 
  a {
  
  &.active {
  .MuiButton-label{
-
+    border-bottom: 2px solid ${props => props.theme.accent};
+      
    color: ${props => props.theme.accent}!important;  
          }
      }

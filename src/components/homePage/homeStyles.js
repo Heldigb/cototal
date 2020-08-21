@@ -2,14 +2,14 @@ import styled, { css } from "styled-components"
 
 
 export const HomeBannerSection = styled.div`
-h5{
-
+h1{
+span{
   color: ${props => props.theme.secondary};
+}
+  color: ${props => props.theme.accent};
 
 }
-h2{
-  color: ${props => props.theme.accent};
-}
+
 
 `
 export const HomeBannerWrap = styled.div`
@@ -264,6 +264,8 @@ export const Title = styled.h3`
 `
 
 export const ServiceWrap = styled.div`
+
+
 .MuiGridListTile-root{
 
 //

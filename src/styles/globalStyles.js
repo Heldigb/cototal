@@ -167,6 +167,23 @@ body {
  //}
   
   
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  width: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: ${props => props.theme.accent};
+  border-radius: 10px;
+}
+  
+  
  header{
     width: 100%;
  }

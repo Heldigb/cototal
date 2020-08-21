@@ -3,13 +3,16 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Container } from "../styles/layoutStyles"
+import ContactPageContent from "../components/subpageComponent/contactPageContent"
 
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact Page" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <Container>
+      <Link to="/">Go back to the homepage</Link>
+      <ContactPageContent/>
+    </Container>
   </Layout>
 )
 

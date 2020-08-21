@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import HomeIcon from "@material-ui/icons/Home"
 // import ReactWebMediaPlayer from 'react-web-media-player';
-
+import {CustomDivider} from "../../styles/layoutStyles"
 import ReactPlayer from 'react-player'
 
 // Render a YouTube video player
@@ -25,17 +25,13 @@ const HomeContent = () => {
                              width="100%"
                              height="100%"
                              controls={true} />
-                {/*<ReactWebMediaPlayer*/}
-                {/*  title="My own video player"*/}
-                {/*  video={VideoItem}*/}
-                {/*  thumbnail={VideoItemThumb}*/}
-                {/*  logo={{ img: { VideoItemLogo }, href:'https://the-redirection-link.com'}}*/}
-                {/*/>*/}
+
 
               </VideoWrap>
             </Grid>
             <Grid item sm={6} md={5}  lg={4} className="content--cta">
                 <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro?</h4>
+              <CustomDivider/>
                 <p>Lorem ipsum dolor sit amet,
                   consectetur adipisicing elit.
                   Architecto earum labore magni,

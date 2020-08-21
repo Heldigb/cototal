@@ -116,9 +116,6 @@ export default function SingleLineGridList() {
 
 
             <img src={tile.img} alt={tile.title}/>
-
-
-
             <GridListTileBar
               title={tile.title}
               classes={{

@@ -17,8 +17,8 @@ const HomeBanner = () => {
       <HomeBannerWrap style={sectionStyle}>
         <Grid container alignItems="center" className="bannerContentWrap paddingWrapper">
              <Grid item sm={8}>
-            <h5> Provide You The Best</h5>
-            <h2>Climate Solutions in Construction</h2>  </Grid>
+            <h1> <span>Provide You The Best</span><br/>
+           Climate Solutions in Construction  </h1></Grid>
         </Grid>
       </HomeBannerWrap>
 </HomeBannerSection>

@@ -5,7 +5,7 @@ import { Container } from "../../styles/layoutStyles"
 import {SubPageWrap} from "./subpageStyles"
 
 
-const AboutPageContent = () => {
+const ServicePageContent = () => {
 
   return (
 <SubPageWrap>
@@ -13,7 +13,7 @@ const AboutPageContent = () => {
 
     <Grid container alignItems="top" className="bannerContentWrap">
       <Grid item sm={12} md={7}>
-        <h1>Hi from the About page</h1>
+        <h1>This is our  Services page</h1>
         <h4>Lorem ipsum dolor sit amet,<br/> consectetur adipisicing elit. Porro?</h4>
         <p>Lorem ipsum dolor sit amet,
           consectetur adipisicing elit.
@@ -52,4 +52,4 @@ const AboutPageContent = () => {
   )
 }
 
-export default AboutPageContent
+export default ServicePageContent
